@@ -72,13 +72,65 @@
         text-align: center;
         font-size: xx-large;
       }
+
+      #changelog {
+        max-width: 800px;
+        margin: 40px auto;
+      }
+
+      #changelog h2 {
+        text-align: center;
+        font-size: xx-large;
+        margin-bottom: 30px;
+      }
+
+      .changelog-entry {
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+      }
+
+      .changelog-entry h3 {
+        margin: 0 0 15px 0;
+        color: #333;
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+
+      .changelog-entry ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .changelog-entry li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+      }
     </style>
   </head>
   <body>
     <main>
-      <header>
-        <img src="./icon48.png" alt="AuthenticatorPlus Icon" />
-        <p>AuthenticatorPlus</p>
+      <header
+        style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap"
+      >
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img src="./icon48.png" alt="AuthenticatorPlus Icon" />
+          <p>AuthenticatorPlus</p>
+        </div>
+        <a
+          href="https://chromewebstore.google.com/detail/glcoddghnafjimjcffegollohoglnamj?utm_source=item-share-cb"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="flex-shrink: 0"
+        >
+          <img
+            alt="Static Badge"
+            src="https://img.shields.io/badge/Version-1.0.4-blue"
+            style="transform: scale(1.2)"
+          />
+        </a>
       </header>
       <section
         id="content"
@@ -363,6 +415,41 @@
             </svg>
             Donate</a
           >
+        </div>
+        <div id="changelog" style="margin-top: 40px">
+          <h2>Changelog</h2>
+          <div class="changelog-entry">
+            <h3>Version 1.0.4 - 2025-8-17</h3>
+            <ul>
+              <li>Improved drag and drop functionality</li>
+              <li>Add sort order persistence to export/import</li>
+              <li>
+                Added custom dialog modal (no longer uses system default dialog)
+              </li>
+              <li>Added "add account" feature for manual secret entry</li>
+              <li>Tested in Chrome Canary as of 8/17/2025</li>
+            </ul>
+          </div>
+          <div class="changelog-entry">
+            <h3>Version 1.0.3 - 2025-4-21</h3>
+            <ul>
+              <li>Added drag and drop feature to account list</li>
+              <li>Added ability to manually bulk edit accounts</li>
+            </ul>
+          </div>
+          <div class="changelog-entry">
+            <h3>Version 1.0.2 - 2025-1-27</h3>
+            <ul>
+              <li>Bug fixes</li>
+              <li>Add backup and restore feature</li>
+            </ul>
+          </div>
+          <div class="changelog-entry">
+            <h3>Version 1.0.1 - 2025</h3>
+            <ul>
+              <li>Initial release</li>
+            </ul>
+          </div>
         </div>
         <div id="comments">
           <h2>Suggestions? Comments? Questions?</h2>
