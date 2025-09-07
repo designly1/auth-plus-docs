@@ -419,6 +419,21 @@
         <div id="changelog" style="margin-top: 40px">
           <h2>Changelog</h2>
           <div class="changelog-entry">
+            <h3>Version 1.0.6 - 2025-9-07</h3>
+            <ul>
+              <li>Remove time cache; always sync UTC on popup open</li>
+              <li>Apply synced time to all TOTP codes and progress arc</li>
+              <li>
+                Persist account order in both local and sync; read local-first
+                with sync fallback
+              </li>
+              <li>
+                Update order on add/rename/delete/drag in both stores to prevent
+                cross-device order loss
+              </li>
+            </ul>
+          </div>
+          <div class="changelog-entry">
             <h3>Version 1.0.5 - 2025-9-07</h3>
             <ul>
               <li>
