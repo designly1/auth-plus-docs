@@ -127,7 +127,7 @@
         >
           <img
             alt="Static Badge"
-            src="https://img.shields.io/badge/Version-1.0.4-blue"
+            src="https://img.shields.io/badge/Version-1.0.5-blue"
             style="transform: scale(1.2)"
           />
         </a>
@@ -418,6 +418,24 @@
         </div>
         <div id="changelog" style="margin-top: 40px">
           <h2>Changelog</h2>
+          <div class="changelog-entry">
+            <h3>Version 1.0.5 - 2025-9-07</h3>
+            <ul>
+              <li>
+                Preserve account order across export/import and UI (uses
+                `accountsOrder`)
+              </li>
+              <li>
+                Fix restore race; avoid overwriting order before data is
+                decrypted
+              </li>
+              <li>Append new accounts to end of order automatically</li>
+              <li>
+                Add time sync: fetch UTC on popup open, cache offset for 5
+                minutes, use for TOTP and progress arc
+              </li>
+            </ul>
+          </div>
           <div class="changelog-entry">
             <h3>Version 1.0.4 - 2025-8-17</h3>
             <ul>
